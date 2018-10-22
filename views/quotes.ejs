@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="quotes.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 class='title'>Here are the awesome quotes!</h1>
+      <div class="results">
+          <% for (x in quotes) { %>
+            <h3>"<%= quotes[x].quote %>" </h3>
+            <h3> ------ <%= quotes[x].name %> at <%= quotes[x].createdAt %></h3>
+            <hr>
+          <% } %>
+      </div>
+    </div>
+  </body>
+</html>
